@@ -1,0 +1,84 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ .container{
+    width: 100%;
+    height: 100vh;
+    background-color:#dad3f2;
+ }
+
+ .navigasi{
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: ;
+    background-color: #6eb2aa;
+    display: flex;
+    box-shadow:0 7px 15px 0 #6eb2aa;
+ }
+
+ .brand{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    text-transform: capitalize;
+ }
+
+ .satu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    color: #007d75;
+    font-weight: 500px;
+ }
+
+ .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+ }
+
+ .list , li{
+    list-style-type: none;
+    padding: 15px;
+ }
+
+ .list , li, a{
+    color: #b45400;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+ }
+
+ .list,li,a:hover {
+    color: #dad3f2;
+    transition: all .3s ease-in-out
+
+ }
+
+ .list,li,img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    
+ } 
+ .img{
+    margin-bottom: 15px;
+ }
+
+
+.active{
+    background-color:#add2ca ;
+    color: #b45400;
+    padding: 5px;
+
+}
+ 
