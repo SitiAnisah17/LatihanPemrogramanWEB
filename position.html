@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    .satu{
+        width: 200px;
+        height: 200px;
+        background-color: mediumorchid;
+        border-radius: 70px;
+        margin-top: 30px;
+        position:sticky;
+    }
+
+    .satu:hover{
+        width: 250px;
+        height: 250px;
+        background-color:cornflowerblue;
+        transform: skew(55px) scale(2);
+        transition:all 0.6s ease-in-out;
+    }
+
+    .dua{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: forestgreen;
+        position: relative;
+        left:80px;
+        margin-top: 30px;
+    }
+
+    .dua:hover{
+        width: 250px;
+        height: 250px;
+        background-color:aqua;
+        transform: scale(1.5);
+        transition:all 0.6s ease-in-out;
+    }
+
+    .tiga{
+        width: 200px;
+        height: 200px;
+        background-color: goldenrod;
+        border-radius: 35px;
+        margin-top: 30px;
+    }
+
+    .tiga:hover{
+        width: 250px;
+        height: 250px;
+        background-color: pink;
+        transform: rotate(-30deg) scale(1.5);
+        transition:all 0.6s ease-in-out;
+    }
+    
+</style>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>
