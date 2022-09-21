@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color:cornsilk;
+    width: 100%;
+    height: 100vh;
+}
+
+    .kotak{
+        width: 50px;
+        height: 50px;
+        background-color: #69779a;
+        border-radius: 100px;
+        animation: animasikotak 2s ease infinite alternate;
+        border-bottom: 3px solid red;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .kotak1{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background-image:radial-gradient( closest-side,rgb(98, 39, 83),rgb(132, 76, 142));
+        border-radius: 100px;
+        animation: animasikotak 2s ease infinite alternate;
+        border-bottom: 3px solid red;
+        text-align: center;
+    }
+
+    .kotak2{
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        background-color:indianred;
+        border-radius: 100px;
+        animation: animasikotak 2s ease infinite alternate;
+        border-bottom: 3px solid red;
+        text-align: center;
+    }
+
+    @keyframes animasikotak{
+        0% {
+            width: 100px;
+        }
+        50% {
+            width: 200px;
+            height: 100px;
+        }
+        100% {
+            width: 200px;
+            height: 200px;
+        }
+    }
+</style>
+<body>
+    <div class="kotak">I</div>
+    <div class="kotak1">L</div>
+    <div class="kotak2">Y</div>
+</body>
+</html>
