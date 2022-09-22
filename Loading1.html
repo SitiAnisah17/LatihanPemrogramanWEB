@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+    }
+
+    .container{
+        width: 300px;
+        height: 200px;
+        background-color: darkred;
+        margin: auto;
+       
+    }
+
+    .container,h1{
+        color: white;
+        text-align: center;
+
+        
+    }
+    .kotak{
+        list-style-type: none;
+        
+    }
+
+    .lingkaran1{
+        width: 25px;
+        height: 25px;
+        margin: 2px;
+        background-color:chocolate;
+        border-radius: 100px;  
+        animation: animasikotak 2s ease 1 alternate;
+    }
+
+    .border{
+        width: 150px;
+        height: 30px;
+        margin:auto;
+        border: 2px solid black;
+    }
+
+    @keyframes animasikotak{
+        0% {
+            width: 150px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Loading</h1>
+            <br>
+                <div>
+                    <ul class="kotak">
+                        <li>
+                            <div class="border">
+                            <div class="lingkaran1"></div> 
+                        </div>
+                        </li>
+                    </ul>   
+                </div>
+     </div>
+</body>
+</html>
