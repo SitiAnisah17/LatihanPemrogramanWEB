@@ -1,0 +1,35 @@
+ul {
+    height: 40px;
+    width: 960px;
+    margin: 0 auto;
+    background: greenyellow;
+  }
+  
+  li {
+    float: left;
+    list-style: none;
+  }
+  
+  .contact:hover {
+    background: gold;
+    border-radius: 20px;
+  }
+  
+  a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+  
+    border: 0 solid greenyellow;
+    background: greenyellow;
+    transition: 0.5ms linear;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+  }
+  
+  a:hover {
+    background: darkgray;
+    border-radius: 20px;
+  }
