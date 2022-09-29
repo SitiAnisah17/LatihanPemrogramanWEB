@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'simbol';
+    src: url('simbol/websymbols-regular-webfont.eot');
+    src: url('simbol/websymbols-regular-webfont.eot?#iefix') format('embeded-opentype'),
+         url('simbol/websymbols-regular-webfont.tff') format('truetype')
+         url('simbol/websymbols-regular-webfont.woff') format('woff')
+         url('simbol/websymbols-regular-webfont.svg') format('svg')
+
+}t
+
+
+ul{
+    width: 250px;
+    padding: 0;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+    background-color:rgb(123, 123, 175);
+    margin-top: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+span.ikon{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-family: 'simbol';
+    font-size: 20px;
+    color: #fff;
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 50px;
+    font-size: 14px;
+}
+
+li,li a,li span.ikon{
+    transition: 0.5s;
+}
+
+li:hover{
+    background-color: #000;
+}
+
+li:hover .ikon{
+    color:yellow;
+    font-size: 50px;
+    top: -10px;
+    left: -20px;
+
+    transform: rotate(20deg);
+}
+
+li:hover a{
+    font-size: 20px;
+    padding: 8px 60px;
+}
