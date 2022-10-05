@@ -1,0 +1,41 @@
+div.box{
+    width: 400px;
+    margin: 10px 40px;
+}
+
+input{
+    display: none;
+}
+
+label.tombol{
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    background:#cd5e51;
+}
+
+label h4{
+    color: beige;
+    padding: 5px;
+}
+
+div.konten{
+    height: 0;
+    overflow: hidden;
+    border: 1px solid black;
+
+    transition: 1s ease;
+}
+
+div.konten p{
+    padding: 5px;
+    margin-top: 0;
+}
+
+input:checked~div.konten{
+    height: 100px;
+}
+
+input:checked~label.tombol{
+    background: #caa7dd;
+}
