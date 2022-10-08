@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floating</title>
+</head>
+<style>
+    input#cek{
+        display: none;
+    }
+
+    label#tombol{
+        position: fixed;
+        top: 40px;
+        left: 670px;
+        z-index:30;
+        width: 20px;
+        height: 50px;
+        background: url(image/close.jpg) 0 10px no-repeat ;
+        cursor: pointer;
+    }
+
+    label#tombol:hover{
+        background: url(image/close.jpg) -20px 10px no-repeat;
+    }
+
+    #box{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        top: 40px;
+        left: 280px;
+        position: fixed;
+        background: 1px solid #ccc;
+        z-index: 20; 
+
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+    }
+
+    #konten{
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    label#tombol, #box{
+        -moz-animation: turun 1s ease;
+        -webkit-animation: turun 1s ease;
+    }
+
+    input#cek:checked ~ label#tombol,input#cek:checked ~ #box{
+        top: -500px;
+        -moz-animation: naik 1s ease;
+        -webkit-animation: naik 1s ease;
+
+    }
+
+    @-moz-keyframes turun{
+        0%{top: -500px;}
+        100%{top: 40px;}
+    }
+
+    @-webkit-keyframes turun{
+        0%{top: -500px;}
+        100%{top: 40px;}
+    }
+
+    @-moz-keyframes naik{
+        0%{top: 40px;}
+        100%{top: -500px;}
+    }
+
+    @-webkit-keyframes naik{
+        0%{top: 40px;}
+        100%{top: -500px;}
+    }
+
+</style>
+<body>
+    <input type="checkbox" id="cek">
+    <label id="tombol" for="cek"></label>
+
+    <div id="box">
+        <div id="konten">
+            Ini adalah konten dari floating box. di sini dapat berisi iklan, pengumuman penting, dan sebagainya.
+            untuk menutup box ini, klik tanda silang atau klik pojok kanan di atas.!
+        </div>
+    </div>
+</body>
+</html>
