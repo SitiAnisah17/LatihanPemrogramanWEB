@@ -1,0 +1,85 @@
+#newstiker{
+    width: 250px;
+    height: 195px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    overflow: hidden;
+}
+
+ul{
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 250px;
+    float: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+li p{
+    margin-top: 0;
+}
+
+li#satu{
+    -moz-animation: satu 10s infinite;
+    -webkit-animation: satu 10s infinite;
+}
+
+li#dua{
+    -moz-animation: dua 10s infinite;
+    -webkit-animation: dua 10s infinite;
+}
+
+li#tiga{
+    -moz-animation: tiga 10s infinite;
+    -webkit-animation: tiga 10s infinite;
+}
+
+@-moz-keyframes satu{
+    25%{opacity: 1;}
+    33%{opacity: 0; margin-top: 0;}
+    34%{opacity: 0; margin-top: -70px;}
+    100%{opacity: 0; margin-top: -70px;}
+}
+
+@-moz-keyframes dua{
+    58%{opacity: 1;}
+    66%{opacity: 0; margin-top: 0;}
+    67%{opacity: 0; margin-top: -70px;}
+    100%{opacity: 0; margin-top: -70px;}
+}
+
+@-moz-keyframes dua{
+    58%{opacity: 1;}
+    66%{opacity: 0; margin-top: 0;}
+    67%{opacity: 0; margin-top: -70px;}
+    100%{opacity: 0; margin-top: -70px;}
+}
+
+@-moz-keyframes tiga{
+    91%{opacity: 1;}
+    98%{opacity: 0; margin-top: 0;}
+    99%{opacity: 0; margin-top: -70px;}
+    100%{opacity: 0; margin-top: -70px;}
+}
+
+@-moz-keyframes tiga{
+    91%{opacity: 1;}
+    98%{opacity: 0; margin-top: 0;}
+    99%{opacity: 0; margin-top: -70px;}
+    100%{opacity: 0; margin-top: -70px;}
+}
+
