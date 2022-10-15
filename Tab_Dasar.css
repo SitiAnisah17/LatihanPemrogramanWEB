@@ -1,0 +1,43 @@
+#tab{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #aaa;
+    overflow: hidden;
+    position: relative;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+label{
+    float: left;
+    display: block;
+    background: (top,#aaa,#666);
+    color: #fff;
+    width: 81.3px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#konten{
+    width: 750px;
+    float: left;
+}
+
+#konten div{
+    float: left;
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    left: 250px;
+}
+
+input[type=radio]:checked + label{
+    background: #fff;
+    color: #555;
+    border-bottom: 1px solid #fff;
+}
+

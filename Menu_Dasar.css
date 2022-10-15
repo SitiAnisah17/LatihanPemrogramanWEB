@@ -1,27 +1,27 @@
-ul {
+ul#menu {
     height: 40px;
     width: 960px;
     margin: 0 auto;
     background: greenyellow;
   }
   
-  li {
+  ul#menu li {
     float: left;
     list-style: none;
   }
   
-  .contact:hover {
+ ul#menu.contact:hover {
     background: gold;
     border-radius: 20px;
   }
   
-  a {
+ ul#menu li a {
     color: green;
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 10px 15px;
-  
+
     border: 0 solid greenyellow;
     background: greenyellow;
     transition: 0.5ms linear;
@@ -29,7 +29,27 @@ ul {
     -webkit-transition: 1s linear;
   }
   
-  a:hover {
+ ul#menu a:hover {
     background: darkgray;
     border-radius: 20px;
+  }
+
+  ul#menu li ul{
+    display: none;
+  }
+
+  ul#menu ul li:hover{
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    padding: 0;
+  }
+
+  ul#menu ul li{
+    float: none;
+  }
+
+  ul#menu ul li{
+    background-color: yellowgreen;
   }

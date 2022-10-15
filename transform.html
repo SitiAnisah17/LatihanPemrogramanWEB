@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #69779a;
+    }
+
+    .kotak{
+        width: 200px;
+        height: 200px;
+        background-color: darkslategray;
+        margin:auto;
+        transition: 1.5s;
+        border-top-left-radius :50px;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 100px;
+      
+    }
+
+    .kotak:hover{
+        transform:scale(1.5) rotate(30deg);
+        border-radius: 100px;
+        background:linear-gradient(#bb7e69,#fbc376,#6eb2aa);
+        
+    }
+
+    .kotaksatu {
+        width: 200px;
+        height: 200px;
+        background-color: #b0dfe6;
+        margin: auto;
+        transition: 1.5s;
+        border-radius: 100px;
+    }
+
+    .kotaksatu:hover{
+        transform:scale(1.5) rotate(30deg);
+        border-radius: 100px;
+        background:linear-gradient(#dad3f2,#dc7092,#9792bd);
+    }
+
+    .kotakdua {
+        width: 200px;
+        height: 200px;
+        background-color: #fd5e0d;
+        margin: auto;
+        transition: 1.5s;
+        border-radius: 100px;
+    }
+
+    .kotakdua:hover{
+        transform:scale(1.5) rotate(30deg);
+        border-radius: 100px;
+        background:linear-gradient(#5599c8,#d5e4f9,#cd64b1);
+    }
+
+    .heart{
+        width: 180px;
+        height: 180px;
+        background:linear-gradient(#dc7092,#cd64b1,#ec6778);
+        position: relative;
+        transform: rotate(-45deg);
+        margin: 30px auto;
+        box-shadow: -10px 10px 90px #ec6778;
+        animation: heart;
+    }
+    @keyframes heart{
+        0%{
+            transform: rotate(-45deg) scale(1.07);
+        }
+        80%{
+            transform: rotate(-45deg) scale(1.0);
+        }
+        100%{
+            transform: rotate(-45deg) scale(0.0);
+        }
+    }
+
+    .heart:before{
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: red;
+        top: -50% ;
+        border-radius: 50px;
+        box-shadow: -10px -10px 90px red;
+        animation: heart 0.6s linear infinite;
+    }
+
+    .heart:after{
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: red;
+        right: -50% ;
+        border-radius: 50px;
+        box-shadow: 10px 10px 90px red;
+    }
+</style>
+<body>
+    <div class="kotak"></div>
+    <div class="kotaksatu"></div>
+    <div class="kotakdua"></div>
+    <div class="heart"></div>
+</body>
+</html>

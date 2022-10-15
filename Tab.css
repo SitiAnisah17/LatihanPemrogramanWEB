@@ -1,0 +1,75 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+*
+,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(90 deg,plum 0%,pink 100%);
+    color: black;
+    font: "Overpass",sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#wrapper{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabs{
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}   
+
+.tab-control{
+    display: inline-block;
+    border-bottom: 2x solid transparent;
+    font-size: 1.25rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tab-control:hover{
+    color: beige;
+}
+
+.tab-content{
+    border-top: 1px solid beige;
+    padding: 1rem;
+}
+
+.tab-panel{
+    display: none;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+input[type=radio]:checked+.tab-control {
+    font-weight: 600;
+    color: aquamarine;
+    border-bottom-color:darkcyan;
+}
+
+#tab-1:checked~.tab-content>#tab-panel{
+    display: block;
+}
+
+#tab-1:checked~.tab-content>#tab-pane{
+    display: block;
+}
